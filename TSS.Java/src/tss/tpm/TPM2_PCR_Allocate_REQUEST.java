@@ -16,7 +16,7 @@ public class TPM2_PCR_Allocate_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: USER
      */
-    public TPM_HANDLE authHandle;
+    public final TPM_HANDLE authHandle;
 
     /** The requested allocation */
     public TPMS_PCR_SELECTION[] pcrAllocation;

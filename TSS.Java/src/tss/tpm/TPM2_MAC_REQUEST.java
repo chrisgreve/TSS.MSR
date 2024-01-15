@@ -16,7 +16,7 @@ public class TPM2_MAC_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: USER
      */
-    public TPM_HANDLE handle;
+    public final TPM_HANDLE handle;
 
     /** MAC data */
     public byte[] buffer;

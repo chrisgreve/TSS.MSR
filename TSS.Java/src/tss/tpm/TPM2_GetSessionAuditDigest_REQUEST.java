@@ -14,18 +14,18 @@ public class TPM2_GetSessionAuditDigest_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: USER
      */
-    public TPM_HANDLE privacyAdminHandle;
+    public final TPM_HANDLE privacyAdminHandle;
 
     /** Handle of the signing key
      *  Auth Index: 2
      *  Auth Role: USER
      */
-    public TPM_HANDLE signHandle;
+    public final TPM_HANDLE signHandle;
 
     /** Handle of the audit session
      *  Auth Index: None
      */
-    public TPM_HANDLE sessionHandle;
+    public final TPM_HANDLE sessionHandle;
 
     /** User-provided qualifying data may be zero-length */
     public byte[] qualifyingData;

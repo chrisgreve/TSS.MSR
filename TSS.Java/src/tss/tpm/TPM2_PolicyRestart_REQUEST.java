@@ -17,7 +17,7 @@ import tss.*;
 public class TPM2_PolicyRestart_REQUEST extends ReqStructure
 {
     /** The handle for the policy session */
-    public TPM_HANDLE sessionHandle;
+    public final TPM_HANDLE sessionHandle;
 
     public TPM2_PolicyRestart_REQUEST() { sessionHandle = new TPM_HANDLE(); }
 

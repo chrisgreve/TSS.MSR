@@ -15,7 +15,7 @@ public class TPM2_NV_ReadPublic_REQUEST extends ReqStructure
     /** The NV Index
      *  Auth Index: None
      */
-    public TPM_HANDLE nvIndex;
+    public final TPM_HANDLE nvIndex;
 
     public TPM2_NV_ReadPublic_REQUEST() { nvIndex = new TPM_HANDLE(); }
 

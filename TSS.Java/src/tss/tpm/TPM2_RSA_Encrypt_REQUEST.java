@@ -17,7 +17,7 @@ public class TPM2_RSA_Encrypt_REQUEST extends ReqStructure
     /** Reference to public portion of RSA key to use for encryption
      *  Auth Index: None
      */
-    public TPM_HANDLE keyHandle;
+    public final TPM_HANDLE keyHandle;
 
     /** Message to be encrypted
      *  NOTE 1 The data type was chosen because it limits the overall size of the input to no

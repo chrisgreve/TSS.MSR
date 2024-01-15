@@ -18,7 +18,7 @@ public class TPM2_PCR_Extend_REQUEST extends ReqStructure
      *  Auth Handle: 1
      *  Auth Role: USER
      */
-    public TPM_HANDLE pcrHandle;
+    public final TPM_HANDLE pcrHandle;
 
     /** List of tagged digest values to be extended */
     public TPMT_HA[] digests;

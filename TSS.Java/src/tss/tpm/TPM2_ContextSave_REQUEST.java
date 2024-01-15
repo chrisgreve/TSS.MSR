@@ -15,7 +15,7 @@ public class TPM2_ContextSave_REQUEST extends ReqStructure
     /** Handle of the resource to save
      *  Auth Index: None
      */
-    public TPM_HANDLE saveHandle;
+    public final TPM_HANDLE saveHandle;
 
     public TPM2_ContextSave_REQUEST() { saveHandle = new TPM_HANDLE(); }
 

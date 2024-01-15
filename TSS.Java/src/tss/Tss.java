@@ -77,7 +77,7 @@ public class Tss
             CredentialBlob = new TPMS_ID_OBJECT();
             return;
         }
-        public TPMS_ID_OBJECT CredentialBlob;
+        public final TPMS_ID_OBJECT CredentialBlob;
         public byte[] Secret;
     }
     

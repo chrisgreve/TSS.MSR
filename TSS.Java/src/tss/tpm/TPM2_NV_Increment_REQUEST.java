@@ -16,12 +16,12 @@ public class TPM2_NV_Increment_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: USER
      */
-    public TPM_HANDLE authHandle;
+    public final TPM_HANDLE authHandle;
 
     /** The NV Index to increment
      *  Auth Index: None
      */
-    public TPM_HANDLE nvIndex;
+    public final TPM_HANDLE nvIndex;
 
     public TPM2_NV_Increment_REQUEST()
     {

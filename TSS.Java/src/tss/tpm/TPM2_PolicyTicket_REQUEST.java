@@ -16,7 +16,7 @@ public class TPM2_PolicyTicket_REQUEST extends ReqStructure
     /** Handle for the policy session being extended
      *  Auth Index: None
      */
-    public TPM_HANDLE policySession;
+    public final TPM_HANDLE policySession;
 
     /** Time when authorization will expire
      *  The contents are TPM specific. This shall be the value returned when ticket was produced.

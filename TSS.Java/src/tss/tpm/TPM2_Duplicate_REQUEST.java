@@ -17,12 +17,12 @@ public class TPM2_Duplicate_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: DUP
      */
-    public TPM_HANDLE objectHandle;
+    public final TPM_HANDLE objectHandle;
 
     /** Shall reference the public area of an asymmetric key
      *  Auth Index: None
      */
-    public TPM_HANDLE newParentHandle;
+    public final TPM_HANDLE newParentHandle;
 
     /** Optional symmetric encryption key
      *  The size for this key is set to zero when the TPM is to generate the key. This

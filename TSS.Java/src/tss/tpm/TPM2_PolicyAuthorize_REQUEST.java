@@ -16,7 +16,7 @@ public class TPM2_PolicyAuthorize_REQUEST extends ReqStructure
     /** Handle for the policy session being extended
      *  Auth Index: None
      */
-    public TPM_HANDLE policySession;
+    public final TPM_HANDLE policySession;
 
     /** Digest of the policy being approved */
     public byte[] approvedPolicy;

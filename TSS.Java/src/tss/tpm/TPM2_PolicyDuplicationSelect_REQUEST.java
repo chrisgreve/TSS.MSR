@@ -15,7 +15,7 @@ public class TPM2_PolicyDuplicationSelect_REQUEST extends ReqStructure
     /** Handle for the policy session being extended
      *  Auth Index: None
      */
-    public TPM_HANDLE policySession;
+    public final TPM_HANDLE policySession;
 
     /** The Name of the object to be duplicated */
     public byte[] objectName;

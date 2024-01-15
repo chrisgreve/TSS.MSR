@@ -16,7 +16,7 @@ public class TPM2_EncryptDecrypt2_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: USER
      */
-    public TPM_HANDLE keyHandle;
+    public final TPM_HANDLE keyHandle;
 
     /** The data to be encrypted/decrypted */
     public byte[] inData;

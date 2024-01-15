@@ -17,13 +17,13 @@ public class TPM2_StartAuthSession_REQUEST extends ReqStructure
      *  may be TPM_RH_NULL
      *  Auth Index: None
      */
-    public TPM_HANDLE tpmKey;
+    public final TPM_HANDLE tpmKey;
 
     /** Entity providing the authValue
      *  may be TPM_RH_NULL
      *  Auth Index: None
      */
-    public TPM_HANDLE bind;
+    public final TPM_HANDLE bind;
 
     /** Initial nonceCaller, sets nonceTPM size for the session
      *  shall be at least 16 octets

@@ -17,7 +17,7 @@ public class TPM2_PolicyOR_REQUEST extends ReqStructure
     /** Handle for the policy session being extended
      *  Auth Index: None
      */
-    public TPM_HANDLE policySession;
+    public final TPM_HANDLE policySession;
 
     /** The list of hashes to check for a match */
     public TPM2B_DIGEST[] pHashList;

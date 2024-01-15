@@ -19,7 +19,7 @@ public class TPM2_CreatePrimary_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: USER
      */
-    public TPM_HANDLE primaryHandle;
+    public final TPM_HANDLE primaryHandle;
 
     /** The sensitive data, see TPM 2.0 Part 1 Sensitive Values */
     public TPMS_SENSITIVE_CREATE inSensitive;

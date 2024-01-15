@@ -16,13 +16,13 @@ public class TPM2_ActivateCredential_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: ADMIN
      */
-    public TPM_HANDLE activateHandle;
+    public final TPM_HANDLE activateHandle;
 
     /** Loaded key used to decrypt the TPMS_SENSITIVE in credentialBlob
      *  Auth Index: 2
      *  Auth Role: USER
      */
-    public TPM_HANDLE keyHandle;
+    public final TPM_HANDLE keyHandle;
 
     /** The credential */
     public TPMS_ID_OBJECT credentialBlob;

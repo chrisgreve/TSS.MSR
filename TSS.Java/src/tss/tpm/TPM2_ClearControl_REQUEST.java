@@ -14,7 +14,7 @@ public class TPM2_ClearControl_REQUEST extends ReqStructure
      *  Auth Handle: 1
      *  Auth Role: USER
      */
-    public TPM_HANDLE auth;
+    public final TPM_HANDLE auth;
 
     /** YES if the disableOwnerClear flag is to be SET, NO if the flag is to be CLEAR. */
     public byte disable;

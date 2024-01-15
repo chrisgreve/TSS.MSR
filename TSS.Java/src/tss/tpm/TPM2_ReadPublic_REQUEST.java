@@ -13,7 +13,7 @@ public class TPM2_ReadPublic_REQUEST extends ReqStructure
     /** TPM handle of an object
      *  Auth Index: None
      */
-    public TPM_HANDLE objectHandle;
+    public final TPM_HANDLE objectHandle;
 
     public TPM2_ReadPublic_REQUEST() { objectHandle = new TPM_HANDLE(); }
 

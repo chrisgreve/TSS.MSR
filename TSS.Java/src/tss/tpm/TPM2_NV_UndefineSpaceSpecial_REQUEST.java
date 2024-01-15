@@ -16,13 +16,13 @@ public class TPM2_NV_UndefineSpaceSpecial_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: ADMIN
      */
-    public TPM_HANDLE nvIndex;
+    public final TPM_HANDLE nvIndex;
 
     /** TPM_RH_PLATFORM + {PP}
      *  Auth Index: 2
      *  Auth Role: USER
      */
-    public TPM_HANDLE platform;
+    public final TPM_HANDLE platform;
 
     public TPM2_NV_UndefineSpaceSpecial_REQUEST()
     {

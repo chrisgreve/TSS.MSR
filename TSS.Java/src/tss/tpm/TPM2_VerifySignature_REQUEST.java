@@ -15,7 +15,7 @@ public class TPM2_VerifySignature_REQUEST extends ReqStructure
     /** Handle of public key that will be used in the validation
      *  Auth Index: None
      */
-    public TPM_HANDLE keyHandle;
+    public final TPM_HANDLE keyHandle;
 
     /** Digest of the signed message */
     public byte[] digest;

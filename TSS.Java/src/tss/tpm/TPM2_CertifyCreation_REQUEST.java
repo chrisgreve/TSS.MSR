@@ -18,12 +18,12 @@ public class TPM2_CertifyCreation_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: USER
      */
-    public TPM_HANDLE signHandle;
+    public final TPM_HANDLE signHandle;
 
     /** The object associated with the creation data
      *  Auth Index: None
      */
-    public TPM_HANDLE objectHandle;
+    public final TPM_HANDLE objectHandle;
 
     /** User-provided qualifying data */
     public byte[] qualifyingData;

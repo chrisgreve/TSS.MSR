@@ -15,7 +15,7 @@ public class TPM2_AC_GetCapability_REQUEST extends ReqStructure
     /** Handle indicating the Attached Component
      *  Auth Index: None
      */
-    public TPM_HANDLE ac;
+    public final TPM_HANDLE ac;
 
     /** Starting info type */
     public TPM_AT capability;

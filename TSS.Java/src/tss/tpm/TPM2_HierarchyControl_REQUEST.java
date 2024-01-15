@@ -17,7 +17,7 @@ public class TPM2_HierarchyControl_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: USER
      */
-    public TPM_HANDLE authHandle;
+    public final TPM_HANDLE authHandle;
 
     /** The enable being modified
      *  TPM_RH_ENDORSEMENT, TPM_RH_OWNER, TPM_RH_PLATFORM, or TPM_RH_PLATFORM_NV

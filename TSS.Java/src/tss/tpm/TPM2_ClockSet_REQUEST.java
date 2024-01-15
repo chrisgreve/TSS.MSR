@@ -18,7 +18,7 @@ public class TPM2_ClockSet_REQUEST extends ReqStructure
      *  Auth Handle: 1
      *  Auth Role: USER
      */
-    public TPM_HANDLE auth;
+    public final TPM_HANDLE auth;
 
     /** New Clock setting in milliseconds */
     public long newTime;

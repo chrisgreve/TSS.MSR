@@ -20,7 +20,7 @@ public class TPM2_ChangeEPS_REQUEST extends ReqStructure
      *  Auth Handle: 1
      *  Auth Role: USER
      */
-    public TPM_HANDLE authHandle;
+    public final TPM_HANDLE authHandle;
 
     public TPM2_ChangeEPS_REQUEST() { authHandle = new TPM_HANDLE(); }
 

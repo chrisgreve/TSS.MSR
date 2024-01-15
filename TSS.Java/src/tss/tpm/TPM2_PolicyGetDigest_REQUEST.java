@@ -15,7 +15,7 @@ public class TPM2_PolicyGetDigest_REQUEST extends ReqStructure
     /** Handle for the policy session
      *  Auth Index: None
      */
-    public TPM_HANDLE policySession;
+    public final TPM_HANDLE policySession;
 
     public TPM2_PolicyGetDigest_REQUEST() { policySession = new TPM_HANDLE(); }
 

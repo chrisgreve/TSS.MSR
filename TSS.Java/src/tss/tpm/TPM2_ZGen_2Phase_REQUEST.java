@@ -19,7 +19,7 @@ public class TPM2_ZGen_2Phase_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: USER
      */
-    public TPM_HANDLE keyA;
+    public final TPM_HANDLE keyA;
 
     /** Other partys static public key (Qs,B = (Xs,B, Ys,B)) */
     public TPMS_ECC_POINT inQsB;

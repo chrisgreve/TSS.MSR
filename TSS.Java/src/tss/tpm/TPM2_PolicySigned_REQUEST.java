@@ -15,12 +15,12 @@ public class TPM2_PolicySigned_REQUEST extends ReqStructure
     /** Handle for a key that will validate the signature
      *  Auth Index: None
      */
-    public TPM_HANDLE authObject;
+    public final TPM_HANDLE authObject;
 
     /** Handle for the policy session being extended
      *  Auth Index: None
      */
-    public TPM_HANDLE policySession;
+    public final TPM_HANDLE policySession;
 
     /** The policy nonce for the session
      *  This can be the Empty Buffer.

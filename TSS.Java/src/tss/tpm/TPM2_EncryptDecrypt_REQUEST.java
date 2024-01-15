@@ -16,7 +16,7 @@ public class TPM2_EncryptDecrypt_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: USER
      */
-    public TPM_HANDLE keyHandle;
+    public final TPM_HANDLE keyHandle;
 
     /** If YES, then the operation is decryption; if NO, the operation is encryption */
     public byte decrypt;

@@ -18,7 +18,7 @@ public class TPM2_ECDH_ZGen_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: USER
      */
-    public TPM_HANDLE keyHandle;
+    public final TPM_HANDLE keyHandle;
 
     /** A public key */
     public TPMS_ECC_POINT inPoint;

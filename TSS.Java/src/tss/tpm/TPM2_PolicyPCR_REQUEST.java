@@ -17,7 +17,7 @@ public class TPM2_PolicyPCR_REQUEST extends ReqStructure
     /** Handle for the policy session being extended
      *  Auth Index: None
      */
-    public TPM_HANDLE policySession;
+    public final TPM_HANDLE policySession;
 
     /** Expected digest value of the selected PCR using the hash algorithm of the session; may
      *  be zero length

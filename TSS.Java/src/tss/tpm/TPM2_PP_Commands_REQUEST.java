@@ -16,7 +16,7 @@ public class TPM2_PP_Commands_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: USER + Physical Presence
      */
-    public TPM_HANDLE auth;
+    public final TPM_HANDLE auth;
 
     /** List of commands to be added to those that will require that Physical Presence be asserted */
     public TPM_CC[] setList;

@@ -16,7 +16,7 @@ public class TPM2_PolicyTemplate_REQUEST extends ReqStructure
     /** Handle for the policy session being extended
      *  Auth Index: None
      */
-    public TPM_HANDLE policySession;
+    public final TPM_HANDLE policySession;
 
     /** The digest to be added to the policy */
     public byte[] templateHash;

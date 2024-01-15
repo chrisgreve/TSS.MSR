@@ -17,13 +17,13 @@ public class TPM2_GetCommandAuditDigest_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: USER
      */
-    public TPM_HANDLE privacyHandle;
+    public final TPM_HANDLE privacyHandle;
 
     /** The handle of the signing key
      *  Auth Index: 2
      *  Auth Role: USER
      */
-    public TPM_HANDLE signHandle;
+    public final TPM_HANDLE signHandle;
 
     /** Other data to associate with this audit digest */
     public byte[] qualifyingData;

@@ -14,7 +14,7 @@ public class TPM2_PCR_SetAuthValue_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: USER
      */
-    public TPM_HANDLE pcrHandle;
+    public final TPM_HANDLE pcrHandle;
 
     /** The desired authorization value */
     public byte[] auth;

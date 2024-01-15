@@ -16,12 +16,12 @@ public class TPM2_EvictControl_REQUEST extends ReqStructure
      *  Auth Handle: 1
      *  Auth Role: USER
      */
-    public TPM_HANDLE auth;
+    public final TPM_HANDLE auth;
 
     /** The handle of a loaded object
      *  Auth Index: None
      */
-    public TPM_HANDLE objectHandle;
+    public final TPM_HANDLE objectHandle;
 
     /** If objectHandle is a transient object handle, then this is the persistent handle for
      *  the object

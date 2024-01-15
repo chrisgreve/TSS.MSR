@@ -16,18 +16,18 @@ public class TPM2_NV_Certify_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: USER
      */
-    public TPM_HANDLE signHandle;
+    public final TPM_HANDLE signHandle;
 
     /** Handle indicating the source of the authorization value for the NV Index
      *  Auth Index: 2
      *  Auth Role: USER
      */
-    public TPM_HANDLE authHandle;
+    public final TPM_HANDLE authHandle;
 
     /** Index for the area to be certified
      *  Auth Index: None
      */
-    public TPM_HANDLE nvIndex;
+    public final TPM_HANDLE nvIndex;
 
     /** User-provided qualifying data */
     public byte[] qualifyingData;

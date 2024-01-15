@@ -18,7 +18,7 @@ public class TPM2_Commit_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: USER
      */
-    public TPM_HANDLE signHandle;
+    public final TPM_HANDLE signHandle;
 
     /** A point (M) on the curve used by signHandle */
     public TPMS_ECC_POINT P1;

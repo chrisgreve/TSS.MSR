@@ -14,7 +14,7 @@ public class TPM2_Quote_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: USER
      */
-    public TPM_HANDLE signHandle;
+    public final TPM_HANDLE signHandle;
 
     /** Data supplied by the caller */
     public byte[] qualifyingData;

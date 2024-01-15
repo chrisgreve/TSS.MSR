@@ -13,7 +13,7 @@ public class TPM2_PolicyCpHash_REQUEST extends ReqStructure
     /** Handle for the policy session being extended
      *  Auth Index: None
      */
-    public TPM_HANDLE policySession;
+    public final TPM_HANDLE policySession;
 
     /** The cpHash added to the policy */
     public byte[] cpHashA;

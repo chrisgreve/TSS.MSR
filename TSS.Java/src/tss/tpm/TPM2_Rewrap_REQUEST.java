@@ -20,12 +20,12 @@ public class TPM2_Rewrap_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: User
      */
-    public TPM_HANDLE oldParent;
+    public final TPM_HANDLE oldParent;
 
     /** New parent of the object
      *  Auth Index: None
      */
-    public TPM_HANDLE newParent;
+    public final TPM_HANDLE newParent;
 
     /** An object encrypted using symmetric key derived from inSymSeed */
     public TPM2B_PRIVATE inDuplicate;

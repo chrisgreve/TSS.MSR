@@ -17,7 +17,7 @@ public class TPM2_PCR_Reset_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: USER
      */
-    public TPM_HANDLE pcrHandle;
+    public final TPM_HANDLE pcrHandle;
 
     public TPM2_PCR_Reset_REQUEST() { pcrHandle = new TPM_HANDLE(); }
 

@@ -14,7 +14,7 @@ public class TPM2_Unseal_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: USER
      */
-    public TPM_HANDLE itemHandle;
+    public final TPM_HANDLE itemHandle;
 
     public TPM2_Unseal_REQUEST() { itemHandle = new TPM_HANDLE(); }
 

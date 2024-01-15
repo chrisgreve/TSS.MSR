@@ -18,17 +18,17 @@ public class TPM2_PolicyAuthorizeNV_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: USER
      */
-    public TPM_HANDLE authHandle;
+    public final TPM_HANDLE authHandle;
 
     /** The NV Index of the area to read
      *  Auth Index: None
      */
-    public TPM_HANDLE nvIndex;
+    public final TPM_HANDLE nvIndex;
 
     /** Handle for the policy session being extended
      *  Auth Index: None
      */
-    public TPM_HANDLE policySession;
+    public final TPM_HANDLE policySession;
 
     public TPM2_PolicyAuthorizeNV_REQUEST()
     {

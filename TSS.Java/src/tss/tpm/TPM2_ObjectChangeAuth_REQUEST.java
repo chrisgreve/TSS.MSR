@@ -14,12 +14,12 @@ public class TPM2_ObjectChangeAuth_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: ADMIN
      */
-    public TPM_HANDLE objectHandle;
+    public final TPM_HANDLE objectHandle;
 
     /** Handle of the parent
      *  Auth Index: None
      */
-    public TPM_HANDLE parentHandle;
+    public final TPM_HANDLE parentHandle;
 
     /** New authorization value */
     public byte[] newAuth;

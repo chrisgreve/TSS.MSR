@@ -10,10 +10,10 @@ public class TpmBuffer
     /** Information about the TPM data structure being currently unmarshaled. **/
     public static class SizedStructInfo {
         /** A TPM structure start position in the marshaled input buffer. **/
-        public int startPos;
+        public final int startPos;
 
         /** Total size of the structure in bytes. **/
-        public int size;
+        public final int size;
 
         public SizedStructInfo(int startPos, int size) {
             this.startPos = startPos;

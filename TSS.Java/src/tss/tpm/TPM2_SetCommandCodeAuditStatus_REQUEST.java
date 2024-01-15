@@ -17,7 +17,7 @@ public class TPM2_SetCommandCodeAuditStatus_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: USER
      */
-    public TPM_HANDLE auth;
+    public final TPM_HANDLE auth;
 
     /** Hash algorithm for the audit digest; if TPM_ALG_NULL, then the hash is not changed */
     public TPM_ALG_ID auditAlg;

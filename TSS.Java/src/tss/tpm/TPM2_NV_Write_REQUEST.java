@@ -16,12 +16,12 @@ public class TPM2_NV_Write_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: USER
      */
-    public TPM_HANDLE authHandle;
+    public final TPM_HANDLE authHandle;
 
     /** The NV Index of the area to write
      *  Auth Index: None
      */
-    public TPM_HANDLE nvIndex;
+    public final TPM_HANDLE nvIndex;
 
     /** The data to write */
     public byte[] data;

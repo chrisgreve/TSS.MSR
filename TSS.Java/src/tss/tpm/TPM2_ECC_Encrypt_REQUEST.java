@@ -13,7 +13,7 @@ public class TPM2_ECC_Encrypt_REQUEST extends ReqStructure
     /** Reference to public portion of ECC key to use for encryption
      *  Auth Index: None
      */
-    public TPM_HANDLE keyHandle;
+    public final TPM_HANDLE keyHandle;
 
     /** Plaintext to be encrypted */
     public byte[] plainText;

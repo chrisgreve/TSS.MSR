@@ -19,13 +19,13 @@ public class TPM2_Certify_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: ADMIN
      */
-    public TPM_HANDLE objectHandle;
+    public final TPM_HANDLE objectHandle;
 
     /** Handle of the key used to sign the attestation structure
      *  Auth Index: 2
      *  Auth Role: USER
      */
-    public TPM_HANDLE signHandle;
+    public final TPM_HANDLE signHandle;
 
     /** User provided qualifying data */
     public byte[] qualifyingData;

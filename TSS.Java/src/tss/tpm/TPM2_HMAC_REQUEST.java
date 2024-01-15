@@ -14,7 +14,7 @@ public class TPM2_HMAC_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: USER
      */
-    public TPM_HANDLE handle;
+    public final TPM_HANDLE handle;
 
     /** HMAC data */
     public byte[] buffer;

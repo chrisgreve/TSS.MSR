@@ -16,7 +16,7 @@ public class TPM2_ClockRateAdjust_REQUEST extends ReqStructure
      *  Auth Handle: 1
      *  Auth Role: USER
      */
-    public TPM_HANDLE auth;
+    public final TPM_HANDLE auth;
 
     /** Adjustment to current Clock update rate */
     public TPM_CLOCK_ADJUST rateAdjust;

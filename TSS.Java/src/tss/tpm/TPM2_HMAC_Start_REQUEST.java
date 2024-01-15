@@ -17,7 +17,7 @@ public class TPM2_HMAC_Start_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: USER
      */
-    public TPM_HANDLE handle;
+    public final TPM_HANDLE handle;
 
     /** Authorization value for subsequent use of the sequence */
     public byte[] auth;

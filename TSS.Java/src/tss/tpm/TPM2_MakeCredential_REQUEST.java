@@ -15,7 +15,7 @@ public class TPM2_MakeCredential_REQUEST extends ReqStructure
     /** Loaded public area, used to encrypt the sensitive area containing the credential key
      *  Auth Index: None
      */
-    public TPM_HANDLE handle;
+    public final TPM_HANDLE handle;
 
     /** The credential information */
     public byte[] credential;

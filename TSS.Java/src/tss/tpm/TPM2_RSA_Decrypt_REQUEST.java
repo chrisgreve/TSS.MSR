@@ -16,7 +16,7 @@ public class TPM2_RSA_Decrypt_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: USER
      */
-    public TPM_HANDLE keyHandle;
+    public final TPM_HANDLE keyHandle;
 
     /** Cipher text to be decrypted
      *  NOTE An encrypted RSA data block is the size of the public modulus.

@@ -17,7 +17,7 @@ public class TPM2_DictionaryAttackLockReset_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: USER
      */
-    public TPM_HANDLE lockHandle;
+    public final TPM_HANDLE lockHandle;
 
     public TPM2_DictionaryAttackLockReset_REQUEST() { lockHandle = new TPM_HANDLE(); }
 

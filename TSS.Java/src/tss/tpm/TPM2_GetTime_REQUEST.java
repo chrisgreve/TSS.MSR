@@ -14,13 +14,13 @@ public class TPM2_GetTime_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: USER
      */
-    public TPM_HANDLE privacyAdminHandle;
+    public final TPM_HANDLE privacyAdminHandle;
 
     /** The keyHandle identifier of a loaded key that can perform digital signatures
      *  Auth Index: 2
      *  Auth Role: USER
      */
-    public TPM_HANDLE signHandle;
+    public final TPM_HANDLE signHandle;
 
     /** Data to tick stamp */
     public byte[] qualifyingData;

@@ -14,7 +14,7 @@ public class TPM2_Clear_REQUEST extends ReqStructure
      *  Auth Handle: 1
      *  Auth Role: USER
      */
-    public TPM_HANDLE authHandle;
+    public final TPM_HANDLE authHandle;
 
     public TPM2_Clear_REQUEST() { authHandle = new TPM_HANDLE(); }
 

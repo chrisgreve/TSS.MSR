@@ -16,18 +16,18 @@ public class TPM2_AC_Send_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: DUP
      */
-    public TPM_HANDLE sendObject;
+    public final TPM_HANDLE sendObject;
 
     /** The handle indicating the source of the authorization value
      *  Auth Index: 2
      *  Auth Role: USER
      */
-    public TPM_HANDLE authHandle;
+    public final TPM_HANDLE authHandle;
 
     /** Handle indicating the Attached Component to which the object will be sent
      *  Auth Index: None
      */
-    public TPM_HANDLE ac;
+    public final TPM_HANDLE ac;
 
     /** Optional non sensitive information related to the object */
     public byte[] acDataIn;

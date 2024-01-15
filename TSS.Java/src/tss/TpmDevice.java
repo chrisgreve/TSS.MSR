@@ -11,7 +11,7 @@ import java.io.Closeable;
 public abstract class TpmDevice implements Closeable
 {
     // A set of TSS_TPM_CONN_INFO flags (defined below)
-    protected int  TpmInfo = 0;
+    protected final int  TpmInfo = 0;
 
     // TSS_TPM_CONN_INFO flags. Specify the type and capabilities of the given TPM device
     protected final int

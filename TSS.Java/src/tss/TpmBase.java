@@ -16,11 +16,11 @@ public abstract class TpmBase implements Closeable
     /**
      * Admin handles (and associated auth values) can be associated with a TPM object
      */
-    public TPM_HANDLE _OwnerHandle = TPM_HANDLE.from(TPM_RH.OWNER);
+    public final TPM_HANDLE _OwnerHandle = TPM_HANDLE.from(TPM_RH.OWNER);
     /**
      * Admin handles (and associated auth values) can be associated with a TPM object
      */
-    public TPM_HANDLE _EndorsementHandle = TPM_HANDLE.from(TPM_RH.ENDORSEMENT);
+    public final TPM_HANDLE _EndorsementHandle = TPM_HANDLE.from(TPM_RH.ENDORSEMENT);
     /**
      * Admin handles (and associated auth values) can be associated with a TPM object
      */

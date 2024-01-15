@@ -21,7 +21,7 @@ public class TPM2_Create_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: USER
      */
-    public TPM_HANDLE parentHandle;
+    public final TPM_HANDLE parentHandle;
 
     /** The sensitive data */
     public TPMS_SENSITIVE_CREATE inSensitive;

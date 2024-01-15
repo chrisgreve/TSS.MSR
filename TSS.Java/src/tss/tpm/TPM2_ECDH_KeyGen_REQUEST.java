@@ -16,7 +16,7 @@ public class TPM2_ECDH_KeyGen_REQUEST extends ReqStructure
     /** Handle of a loaded ECC key public area.
      *  Auth Index: None
      */
-    public TPM_HANDLE keyHandle;
+    public final TPM_HANDLE keyHandle;
 
     public TPM2_ECDH_KeyGen_REQUEST() { keyHandle = new TPM_HANDLE(); }
 

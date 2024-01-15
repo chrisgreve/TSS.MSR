@@ -17,12 +17,12 @@ public class TPM2_NV_SetBits_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: USER
      */
-    public TPM_HANDLE authHandle;
+    public final TPM_HANDLE authHandle;
 
     /** NV Index of the area in which the bit is to be set
      *  Auth Index: None
      */
-    public TPM_HANDLE nvIndex;
+    public final TPM_HANDLE nvIndex;
 
     /** The data to OR with the current contents */
     public long bits;

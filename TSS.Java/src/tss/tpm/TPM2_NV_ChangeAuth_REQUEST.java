@@ -14,7 +14,7 @@ public class TPM2_NV_ChangeAuth_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: ADMIN
      */
-    public TPM_HANDLE nvIndex;
+    public final TPM_HANDLE nvIndex;
 
     /** New authorization value */
     public byte[] newAuth;

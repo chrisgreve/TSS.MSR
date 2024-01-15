@@ -16,7 +16,7 @@ public class TPM2_Sign_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: USER
      */
-    public TPM_HANDLE keyHandle;
+    public final TPM_HANDLE keyHandle;
 
     /** Digest to be signed */
     public byte[] digest;

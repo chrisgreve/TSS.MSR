@@ -19,7 +19,7 @@ public class TPM2_SetPrimaryPolicy_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: USER
      */
-    public TPM_HANDLE authHandle;
+    public final TPM_HANDLE authHandle;
 
     /** An authorization policy digest; may be the Empty Buffer
      *  If hashAlg is TPM_ALG_NULL, then this shall be an Empty Buffer.

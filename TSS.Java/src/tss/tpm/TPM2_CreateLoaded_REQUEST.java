@@ -20,7 +20,7 @@ public class TPM2_CreateLoaded_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: USER
      */
-    public TPM_HANDLE parentHandle;
+    public final TPM_HANDLE parentHandle;
 
     /** The sensitive data, see TPM 2.0 Part 1 Sensitive Values */
     public TPMS_SENSITIVE_CREATE inSensitive;

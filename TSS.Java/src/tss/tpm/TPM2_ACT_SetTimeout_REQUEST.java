@@ -16,7 +16,7 @@ public class TPM2_ACT_SetTimeout_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: USER
      */
-    public TPM_HANDLE actHandle;
+    public final TPM_HANDLE actHandle;
 
     /** The start timeout value for the ACT in seconds */
     public int startTimeout;

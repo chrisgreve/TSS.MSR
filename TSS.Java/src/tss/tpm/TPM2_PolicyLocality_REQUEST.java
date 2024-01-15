@@ -13,7 +13,7 @@ public class TPM2_PolicyLocality_REQUEST extends ReqStructure
     /** Handle for the policy session being extended
      *  Auth Index: None
      */
-    public TPM_HANDLE policySession;
+    public final TPM_HANDLE policySession;
 
     /** The allowed localities for the policy */
     public TPMA_LOCALITY locality;

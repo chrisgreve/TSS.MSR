@@ -19,13 +19,13 @@ public class TPM2_EventSequenceComplete_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: USER
      */
-    public TPM_HANDLE pcrHandle;
+    public final TPM_HANDLE pcrHandle;
 
     /** Authorization for the sequence
      *  Auth Index: 2
      *  Auth Role: USER
      */
-    public TPM_HANDLE sequenceHandle;
+    public final TPM_HANDLE sequenceHandle;
 
     /** Data to be added to the Event */
     public byte[] buffer;

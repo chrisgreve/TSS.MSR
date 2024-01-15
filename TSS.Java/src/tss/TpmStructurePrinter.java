@@ -7,7 +7,7 @@ package tss;
  */
 public class TpmStructurePrinter 
 {
-    StringBuilder b;
+    final StringBuilder b;
     public TpmStructurePrinter()
     {
         b = new StringBuilder();

@@ -17,7 +17,7 @@ public class TPM2_Load_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: USER
      */
-    public TPM_HANDLE parentHandle;
+    public final TPM_HANDLE parentHandle;
 
     /** The private portion of the object */
     public TPM2B_PRIVATE inPrivate;

@@ -17,7 +17,7 @@ public class TPM2_NV_DefineSpace_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: USER
      */
-    public TPM_HANDLE authHandle;
+    public final TPM_HANDLE authHandle;
 
     /** The authorization value */
     public byte[] auth;

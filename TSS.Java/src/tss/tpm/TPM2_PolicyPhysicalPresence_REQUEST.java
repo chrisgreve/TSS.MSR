@@ -15,7 +15,7 @@ public class TPM2_PolicyPhysicalPresence_REQUEST extends ReqStructure
     /** Handle for the policy session being extended
      *  Auth Index: None
      */
-    public TPM_HANDLE policySession;
+    public final TPM_HANDLE policySession;
 
     public TPM2_PolicyPhysicalPresence_REQUEST() { policySession = new TPM_HANDLE(); }
 

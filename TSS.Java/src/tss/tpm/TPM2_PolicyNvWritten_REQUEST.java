@@ -16,7 +16,7 @@ public class TPM2_PolicyNvWritten_REQUEST extends ReqStructure
     /** Handle for the policy session being extended
      *  Auth Index: None
      */
-    public TPM_HANDLE policySession;
+    public final TPM_HANDLE policySession;
 
     /** YES if NV Index is required to have been written
      *  NO if NV Index is required not to have been written

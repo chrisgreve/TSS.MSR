@@ -16,13 +16,13 @@ public class TPM2_FieldUpgradeStart_REQUEST extends ReqStructure
      *  Auth Index:1
      *  Auth Role: ADMIN
      */
-    public TPM_HANDLE authorization;
+    public final TPM_HANDLE authorization;
 
     /** Handle of a public area that contains the TPM Vendor Authorization Key that will be
      *  used to validate manifestSignature
      *  Auth Index: None
      */
-    public TPM_HANDLE keyHandle;
+    public final TPM_HANDLE keyHandle;
 
     /** Digest of the first block in the field upgrade sequence */
     public byte[] fuDigest;

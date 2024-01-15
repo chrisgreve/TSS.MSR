@@ -14,7 +14,7 @@ public class TPM2_PCR_Event_REQUEST extends ReqStructure
      *  Auth Handle: 1
      *  Auth Role: USER
      */
-    public TPM_HANDLE pcrHandle;
+    public final TPM_HANDLE pcrHandle;
 
     /** Event data in sized buffer */
     public byte[] eventData;

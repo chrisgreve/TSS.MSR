@@ -18,7 +18,7 @@ public class TPM2_Import_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: USER
      */
-    public TPM_HANDLE parentHandle;
+    public final TPM_HANDLE parentHandle;
 
     /** The optional symmetric encryption key used as the inner wrapper for duplicate
      *  If symmetricAlg is TPM_ALG_NULL, then this parameter shall be the Empty Buffer.

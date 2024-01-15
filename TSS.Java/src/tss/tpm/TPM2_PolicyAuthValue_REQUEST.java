@@ -13,7 +13,7 @@ public class TPM2_PolicyAuthValue_REQUEST extends ReqStructure
     /** Handle for the policy session being extended
      *  Auth Index: None
      */
-    public TPM_HANDLE policySession;
+    public final TPM_HANDLE policySession;
 
     public TPM2_PolicyAuthValue_REQUEST() { policySession = new TPM_HANDLE(); }
 

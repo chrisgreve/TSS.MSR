@@ -14,7 +14,7 @@ public class TPM2_DictionaryAttackParameters_REQUEST extends ReqStructure
      *  Auth Index: 1
      *  Auth Role: USER
      */
-    public TPM_HANDLE lockHandle;
+    public final TPM_HANDLE lockHandle;
 
     /** Count of authorization failures before the lockout is imposed */
     public int newMaxTries;
