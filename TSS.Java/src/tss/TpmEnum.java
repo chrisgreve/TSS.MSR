@@ -55,14 +55,14 @@ public abstract class TpmEnum<T extends TpmEnum<T>> implements TpmMarshaller
         Constructor<T> ctor = null;
         try {
             ctor = cls.getConstructor(int.class);
-        } catch (NoSuchMethodException | SecurityException e) {}
+        } catch (NoSuchMethodException | SecurityException ignored ) {}
         if (ctor == null)
             return null;
         T newEnum = null;
         try {
             newEnum = ctor.newInstance(value);
         } catch (InstantiationException | IllegalAccessException |
-                 IllegalArgumentException | InvocationTargetException e) {} 
+                 IllegalArgumentException | InvocationTargetException ignored ) {}
         return newEnum;
     }
 

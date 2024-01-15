@@ -41,7 +41,7 @@ public class TpmDeviceTcp extends TpmDevice
                 SignalSocket = new Socket(hostName, port+1);
         } catch (Exception e) {
             if (CommandSocket != null)
-                try { CommandSocket.close(); } catch (IOException ioe) {}
+                try { CommandSocket.close(); } catch (IOException ignored ) {}
             System.err.println("Failed to connect to the TPM at " + hostName + ":" + 
                                port + ": " +  e.getMessage());
             return false;
@@ -61,10 +61,10 @@ public class TpmDeviceTcp extends TpmDevice
                 dispatchCommand(cmdGetRandom);
                 resp = getResponse();
             }
-            catch (Exception e) {}
+            catch (Exception ignored ) {}
             if (resp == null || resp.length != 20)
             {
-                try { CommandSocket.close(); } catch (IOException ioe) {}
+                try { CommandSocket.close(); } catch (IOException ignored ) {}
                 CommandSocket = null;
                 if (oldTrm) {
                     oldTrm = false;
@@ -95,12 +95,12 @@ public class TpmDeviceTcp extends TpmDevice
     {
         if (CommandSocket != null) {
             writeInt(CommandSocket, TcpTpmCommands.SessionEnd.Val);
-            try { CommandSocket.close(); } catch (IOException ioe) {}
+            try { CommandSocket.close(); } catch (IOException ignored ) {}
             CommandSocket = null;
         }
         if (SignalSocket != null) {
             writeInt(SignalSocket, TcpTpmCommands.SessionEnd.Val);
-            try { SignalSocket.close(); } catch (IOException ioe) {}
+            try { SignalSocket.close(); } catch (IOException ignored ) {}
             SignalSocket = null;
         }
     }

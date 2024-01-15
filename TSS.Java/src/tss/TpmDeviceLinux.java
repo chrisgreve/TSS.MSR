@@ -40,7 +40,7 @@ public class TpmDeviceLinux extends TpmDevice
     public void close()
     {
         if (devTpm != null)
-            try { devTpm.close(); } catch (IOException ioe) {}
+            try { devTpm.close(); } catch (IOException ignored ) {}
     }
     
     private String openTpmDevice(String devName)
@@ -73,7 +73,7 @@ public class TpmDeviceLinux extends TpmDevice
                     break;
                 try {
                     Thread.sleep(200);
-                } catch (InterruptedException e) {}
+                } catch (InterruptedException ignored ) {}
             } while (count++ < 20);
         } catch (IOException e) {
             throw new RuntimeException("TSS.Java fatal error: Failed to read TPM response from /dev/tpm0");
