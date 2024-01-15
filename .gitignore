@@ -229,3 +229,5 @@ FakesAssemblies/
 /Tpm2Tester/TestSuite/Properties/launchSettings.json
 *.map
 *.json
+
+TSS.Java/.idea/
