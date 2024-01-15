@@ -24,7 +24,7 @@ public final class Logic extends TpmEnum<Logic>
         CLEAR
     }
 
-    private static ValueMap<Logic> _ValueMap = new ValueMap<Logic>();
+    private static ValueMap<Logic> _ValueMap = new ValueMap<>();
 
     /** These definitions provide mapping of the Java enum constants to their TPM integer values */
     public static final Logic

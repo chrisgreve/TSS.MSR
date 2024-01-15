@@ -41,7 +41,7 @@ public final class TPM_CLOCK_ADJUST extends TpmEnum<TPM_CLOCK_ADJUST>
         COARSE_FASTER
     }
 
-    private static ValueMap<TPM_CLOCK_ADJUST> _ValueMap = new ValueMap<TPM_CLOCK_ADJUST>();
+    private static ValueMap<TPM_CLOCK_ADJUST> _ValueMap = new ValueMap<>();
 
     /** These definitions provide mapping of the Java enum constants to their TPM integer values */
     public static final TPM_CLOCK_ADJUST

@@ -31,7 +31,7 @@ public final class TPM_NV_INDEX extends TpmAttribute<TPM_NV_INDEX>
         RhNv_BIT_LENGTH
     }
 
-    private static ValueMap<TPM_NV_INDEX> _ValueMap = new ValueMap<TPM_NV_INDEX>();
+    private static ValueMap<TPM_NV_INDEX> _ValueMap = new ValueMap<>();
 
     /** These definitions provide mapping of the Java enum constants to their TPM integer values */
     public static final TPM_NV_INDEX

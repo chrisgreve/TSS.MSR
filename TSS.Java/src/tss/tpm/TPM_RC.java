@@ -547,7 +547,7 @@ public final class TPM_RC extends TpmEnum<TPM_RC>
         TBS_OWNER_AUTH_NOT_FOUND
     }
 
-    private static ValueMap<TPM_RC> _ValueMap = new ValueMap<TPM_RC>();
+    private static ValueMap<TPM_RC> _ValueMap = new ValueMap<>();
 
     /** These definitions provide mapping of the Java enum constants to their TPM integer values */
     public static final TPM_RC

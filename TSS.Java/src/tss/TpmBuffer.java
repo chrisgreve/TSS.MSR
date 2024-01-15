@@ -8,7 +8,7 @@ import java.util.Stack;
 public class TpmBuffer
 {
     /** Information about the TPM data structure being currently unmarshaled. **/
-    public class SizedStructInfo {
+    public static class SizedStructInfo {
         /** A TPM structure start position in the marshaled input buffer. **/
         public int startPos;
 
@@ -28,7 +28,7 @@ public class TpmBuffer
     void init(byte[] backingBuffer)
     {
         buf = ByteBuffer.wrap(backingBuffer);
-        sizedStructSizes = new Stack<SizedStructInfo>();
+        sizedStructSizes = new Stack<>();
         outOfBounds = false;
     }
 

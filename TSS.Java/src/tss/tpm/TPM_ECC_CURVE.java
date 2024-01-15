@@ -34,7 +34,7 @@ public final class TPM_ECC_CURVE extends TpmEnum<TPM_ECC_CURVE>
         TEST_P192
     }
 
-    private static ValueMap<TPM_ECC_CURVE> _ValueMap = new ValueMap<TPM_ECC_CURVE>();
+    private static ValueMap<TPM_ECC_CURVE> _ValueMap = new ValueMap<>();
 
     /** These definitions provide mapping of the Java enum constants to their TPM integer values */
     public static final TPM_ECC_CURVE

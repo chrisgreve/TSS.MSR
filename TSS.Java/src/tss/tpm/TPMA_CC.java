@@ -59,7 +59,7 @@ public final class TPMA_CC extends TpmAttribute<TPMA_CC>
         Res_BIT_LENGTH
     }
 
-    private static ValueMap<TPMA_CC> _ValueMap = new ValueMap<TPMA_CC>();
+    private static ValueMap<TPMA_CC> _ValueMap = new ValueMap<>();
 
     /** These definitions provide mapping of the Java enum constants to their TPM integer values */
     public static final TPMA_CC

@@ -53,7 +53,7 @@ public final class TPM_EO extends TpmEnum<TPM_EO>
         BITCLEAR
     }
 
-    private static ValueMap<TPM_EO> _ValueMap = new ValueMap<TPM_EO>();
+    private static ValueMap<TPM_EO> _ValueMap = new ValueMap<>();
 
     /** These definitions provide mapping of the Java enum constants to their TPM integer values */
     public static final TPM_EO

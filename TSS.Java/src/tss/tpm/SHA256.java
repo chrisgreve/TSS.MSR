@@ -23,7 +23,7 @@ public final class SHA256 extends TpmEnum<SHA256>
         BLOCK_SIZE
     }
 
-    private static ValueMap<SHA256> _ValueMap = new ValueMap<SHA256>();
+    private static ValueMap<SHA256> _ValueMap = new ValueMap<>();
 
     /** These definitions provide mapping of the Java enum constants to their TPM integer values */
     public static final SHA256

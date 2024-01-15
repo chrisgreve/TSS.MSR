@@ -21,7 +21,7 @@ public final class NameUnionTagValues extends TpmEnum<NameUnionTagValues>
         
     }
     
-    private static ValueMap<NameUnionTagValues> _ValueMap = new ValueMap<NameUnionTagValues>();
+    private static ValueMap<NameUnionTagValues> _ValueMap = new ValueMap<>();
     
     public static final NameUnionTagValues
     

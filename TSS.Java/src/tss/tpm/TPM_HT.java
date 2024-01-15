@@ -59,7 +59,7 @@ public final class TPM_HT extends TpmEnum<TPM_HT>
         AC
     }
 
-    private static ValueMap<TPM_HT> _ValueMap = new ValueMap<TPM_HT>();
+    private static ValueMap<TPM_HT> _ValueMap = new ValueMap<>();
 
     /** These definitions provide mapping of the Java enum constants to their TPM integer values */
     public static final TPM_HT

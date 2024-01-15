@@ -166,7 +166,7 @@ public final class Implementation extends TpmEnum<Implementation>
         PRIVATE_VENDOR_SPECIFIC_BYTES
     }
 
-    private static ValueMap<Implementation> _ValueMap = new ValueMap<Implementation>();
+    private static ValueMap<Implementation> _ValueMap = new ValueMap<>();
 
     /** These definitions provide mapping of the Java enum constants to their TPM integer values */
     public static final Implementation

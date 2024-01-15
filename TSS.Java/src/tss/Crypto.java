@@ -162,7 +162,7 @@ public class Crypto {
                 RSADigestSigner signer = new RSADigestSigner(getDigest(hashAlg));
                 signer.init(false, pubKey);
                 signer.update(_dataThatWasSigned, 0, _dataThatWasSigned.length);
-                Boolean sigOk = signer.verifySignature(theRsaSig.sig);
+                boolean sigOk = signer.verifySignature(theRsaSig.sig);
                 return sigOk;
             }
         }

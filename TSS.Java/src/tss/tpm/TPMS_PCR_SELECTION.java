@@ -126,21 +126,19 @@ public class TPMS_PCR_SELECTION extends TpmStructure
         hash = pcrAlg;
         int pcrMax = 0;
 
-        for (int j = 0; j < pcrIndices.length; j++)
-        {
-            if (pcrIndices[j] > pcrMax)
-                pcrMax = pcrIndices[j];
-        }
+	    for ( final int index : pcrIndices ) {
+		    if ( index > pcrMax )
+			    pcrMax = index;
+	    }
 
         if (pcrMax < 23)
             pcrMax = 23;
 
         pcrSelect = new byte[pcrMax / 8 + 1];
 
-        for (int j = 0; j < pcrIndices.length; j++) 
-        {
-            pcrSelect[pcrIndices[j] / 8] |= (byte)(1 << (pcrIndices[j] % 8));
-        }
+	    for ( final int pcrIndex : pcrIndices ) {
+		    pcrSelect[pcrIndex / 8] |= (byte) ( 1 << ( pcrIndex % 8 ) );
+	    }
     }
 }
 

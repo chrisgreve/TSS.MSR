@@ -41,7 +41,7 @@ public final class ImplementationConstants extends TpmEnum<ImplementationConstan
         MAX_ACT_DATA
     }
 
-    private static ValueMap<ImplementationConstants> _ValueMap = new ValueMap<ImplementationConstants>();
+    private static ValueMap<ImplementationConstants> _ValueMap = new ValueMap<>();
 
     /** These definitions provide mapping of the Java enum constants to their TPM integer values */
     public static final ImplementationConstants

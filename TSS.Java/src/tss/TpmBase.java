@@ -124,10 +124,7 @@ public abstract class TpmBase implements Closeable
         }
         TPM_RC[] old = ExpectedResponses;
         ExpectedResponses = new TPM_RC[expectedResponses.length + old.length];
-        for (int i = 0; i < old.length; ++i)
-        {
-            ExpectedResponses[i] = old[i];  
-        }
+	    System.arraycopy( old, 0, ExpectedResponses, 0, old.length );
 
         for (int i = 0; i < expectedResponses.length; ++i)
         {

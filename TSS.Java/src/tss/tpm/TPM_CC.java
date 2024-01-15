@@ -210,7 +210,7 @@ public final class TPM_CC extends TpmEnum<TPM_CC>
         Vendor_TCG_Test
     }
 
-    private static ValueMap<TPM_CC> _ValueMap = new ValueMap<TPM_CC>();
+    private static ValueMap<TPM_CC> _ValueMap = new ValueMap<>();
 
     /** These definitions provide mapping of the Java enum constants to their TPM integer values */
     public static final TPM_CC

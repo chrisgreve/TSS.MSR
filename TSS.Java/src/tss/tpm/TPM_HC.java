@@ -102,7 +102,7 @@ public final class TPM_HC extends TpmEnum<TPM_HC>
         AC_LAST
     }
 
-    private static ValueMap<TPM_HC> _ValueMap = new ValueMap<TPM_HC>();
+    private static ValueMap<TPM_HC> _ValueMap = new ValueMap<>();
 
     /** These definitions provide mapping of the Java enum constants to their TPM integer values */
     public static final TPM_HC
