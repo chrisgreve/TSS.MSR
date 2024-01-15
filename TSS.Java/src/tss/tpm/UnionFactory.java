@@ -18,7 +18,7 @@ class UnionFactory
     public static <U extends TpmUnion, S extends TpmEnum<S>>
     U create(String unionType, S selector) // S = TPM_ALG_ID | TPM_CAP | TPM_ST
     {
-        if (unionType == "TPMU_CAPABILITIES")
+        if ( unionType.equals( "TPMU_CAPABILITIES" ) )
             switch (((TPM_CAP)selector).asEnum()) {
                 case ALGS: return (U) new TPML_ALG_PROPERTY();
                 case HANDLES: return (U) new TPML_HANDLE();
@@ -33,7 +33,7 @@ class UnionFactory
                 case ACT: return (U) new TPML_ACT_DATA();
                 default:
             }
-        else if (unionType == "TPMU_ATTEST")
+        else if ( unionType.equals( "TPMU_ATTEST" ) )
             switch (((TPM_ST)selector).asEnum()) {
                 case ATTEST_CERTIFY: return (U) new TPMS_CERTIFY_INFO();
                 case ATTEST_CREATION: return (U) new TPMS_CREATION_INFO();
@@ -45,7 +45,7 @@ class UnionFactory
                 case ATTEST_NV_DIGEST: return (U) new TPMS_NV_DIGEST_CERTIFY_INFO();
                 default:
             }
-        else if (unionType == "TPMU_SYM_DETAILS")
+        else if ( unionType.equals( "TPMU_SYM_DETAILS" ) )
             switch (((TPM_ALG_ID)selector).asEnum()) {
                 case TDES: return (U) new TPMS_TDES_SYM_DETAILS();
                 case AES: return (U) new TPMS_AES_SYM_DETAILS();
@@ -56,20 +56,20 @@ class UnionFactory
                 case NULL: return (U) new TPMS_NULL_SYM_DETAILS();
                 default:
             }
-        else if (unionType == "TPMU_SENSITIVE_CREATE")
+        else if ( unionType.equals( "TPMU_SENSITIVE_CREATE" ) )
             switch (((TPM_ALG_ID)selector).asEnum()) {
                 case ANY: return (U) null;
                 case ANY2: return (U) new TPMS_DERIVE();
                 default:
             }
-        else if (unionType == "TPMU_SCHEME_KEYEDHASH")
+        else if ( unionType.equals( "TPMU_SCHEME_KEYEDHASH" ) )
             switch (((TPM_ALG_ID)selector).asEnum()) {
                 case HMAC: return (U) new TPMS_SCHEME_HMAC();
                 case XOR: return (U) new TPMS_SCHEME_XOR();
                 case NULL: return (U) new TPMS_NULL_SCHEME_KEYEDHASH();
                 default:
             }
-        else if (unionType == "TPMU_SIG_SCHEME")
+        else if ( unionType.equals( "TPMU_SIG_SCHEME" ) )
             switch (((TPM_ALG_ID)selector).asEnum()) {
                 case RSASSA: return (U) new TPMS_SIG_SCHEME_RSASSA();
                 case RSAPSS: return (U) new TPMS_SIG_SCHEME_RSAPSS();
@@ -82,7 +82,7 @@ class UnionFactory
                 case NULL: return (U) new TPMS_NULL_SIG_SCHEME();
                 default:
             }
-        else if (unionType == "TPMU_KDF_SCHEME")
+        else if ( unionType.equals( "TPMU_KDF_SCHEME" ) )
             switch (((TPM_ALG_ID)selector).asEnum()) {
                 case MGF1: return (U) new TPMS_KDF_SCHEME_MGF1();
                 case KDF1_SP800_56A: return (U) new TPMS_KDF_SCHEME_KDF1_SP800_56A();
@@ -92,7 +92,7 @@ class UnionFactory
                 case NULL: return (U) new TPMS_NULL_KDF_SCHEME();
                 default:
             }
-        else if (unionType == "TPMU_ASYM_SCHEME")
+        else if ( unionType.equals( "TPMU_ASYM_SCHEME" ) )
             switch (((TPM_ALG_ID)selector).asEnum()) {
                 case ECDH: return (U) new TPMS_KEY_SCHEME_ECDH();
                 case ECMQV: return (U) new TPMS_KEY_SCHEME_ECMQV();
@@ -108,7 +108,7 @@ class UnionFactory
                 case NULL: return (U) new TPMS_NULL_ASYM_SCHEME();
                 default:
             }
-        else if (unionType == "TPMU_SIGNATURE")
+        else if ( unionType.equals( "TPMU_SIGNATURE" ) )
             switch (((TPM_ALG_ID)selector).asEnum()) {
                 case RSASSA: return (U) new TPMS_SIGNATURE_RSASSA();
                 case RSAPSS: return (U) new TPMS_SIGNATURE_RSAPSS();
@@ -121,7 +121,7 @@ class UnionFactory
                 case NULL: return (U) new TPMS_NULL_SIGNATURE();
                 default:
             }
-        else if (unionType == "TPMU_PUBLIC_ID")
+        else if ( unionType.equals( "TPMU_PUBLIC_ID" ) )
             switch (((TPM_ALG_ID)selector).asEnum()) {
                 case KEYEDHASH: return (U) new TPM2B_DIGEST_KEYEDHASH();
                 case SYMCIPHER: return (U) new TPM2B_DIGEST_SYMCIPHER();
@@ -130,7 +130,7 @@ class UnionFactory
                 case ANY: return (U) new TPMS_DERIVE();
                 default:
             }
-        else if (unionType == "TPMU_PUBLIC_PARMS")
+        else if ( unionType.equals( "TPMU_PUBLIC_PARMS" ) )
             switch (((TPM_ALG_ID)selector).asEnum()) {
                 case KEYEDHASH: return (U) new TPMS_KEYEDHASH_PARMS();
                 case SYMCIPHER: return (U) new TPMS_SYMCIPHER_PARMS();
@@ -139,7 +139,7 @@ class UnionFactory
                 case ANY: return (U) new TPMS_ASYM_PARMS();
                 default:
             }
-        else if (unionType == "TPMU_SENSITIVE_COMPOSITE")
+        else if ( unionType.equals( "TPMU_SENSITIVE_COMPOSITE" ) )
             switch (((TPM_ALG_ID)selector).asEnum()) {
                 case RSA: return (U) new TPM2B_PRIVATE_KEY_RSA();
                 case ECC: return (U) new TPM2B_ECC_PARAMETER();
