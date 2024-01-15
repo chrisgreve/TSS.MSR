@@ -23,7 +23,7 @@ public final class SHA512 extends TpmEnum<SHA512>
         BLOCK_SIZE
     }
 
-    private static ValueMap<SHA512> _ValueMap = new ValueMap<>();
+    private static final ValueMap<SHA512> _ValueMap = new ValueMap<>();
 
     /** These definitions provide mapping of the Java enum constants to their TPM integer values */
     public static final SHA512

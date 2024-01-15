@@ -68,7 +68,7 @@ public final class TPMA_STARTUP_CLEAR extends TpmAttribute<TPMA_STARTUP_CLEAR>
         orderly
     }
 
-    private static ValueMap<TPMA_STARTUP_CLEAR> _ValueMap = new ValueMap<>();
+    private static final ValueMap<TPMA_STARTUP_CLEAR> _ValueMap = new ValueMap<>();
 
     /** These definitions provide mapping of the Java enum constants to their TPM integer values */
     public static final TPMA_STARTUP_CLEAR

@@ -41,7 +41,7 @@ public final class TPM_NT extends TpmEnum<TPM_NT>
         PIN_PASS
     }
 
-    private static ValueMap<TPM_NT> _ValueMap = new ValueMap<>();
+    private static final ValueMap<TPM_NT> _ValueMap = new ValueMap<>();
 
     /** These definitions provide mapping of the Java enum constants to their TPM integer values */
     public static final TPM_NT

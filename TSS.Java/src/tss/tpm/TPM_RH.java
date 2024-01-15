@@ -89,7 +89,7 @@ public final class TPM_RH extends TpmEnum<TPM_RH>
         LAST
     }
 
-    private static ValueMap<TPM_RH> _ValueMap = new ValueMap<>();
+    private static final ValueMap<TPM_RH> _ValueMap = new ValueMap<>();
 
     /** These definitions provide mapping of the Java enum constants to their TPM integer values */
     public static final TPM_RH

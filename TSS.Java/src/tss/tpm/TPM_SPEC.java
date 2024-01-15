@@ -32,7 +32,7 @@ public final class TPM_SPEC extends TpmEnum<TPM_SPEC>
         DAY_OF_YEAR
     }
 
-    private static ValueMap<TPM_SPEC> _ValueMap = new ValueMap<>();
+    private static final ValueMap<TPM_SPEC> _ValueMap = new ValueMap<>();
 
     /** These definitions provide mapping of the Java enum constants to their TPM integer values */
     public static final TPM_SPEC

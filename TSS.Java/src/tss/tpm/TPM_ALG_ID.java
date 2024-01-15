@@ -170,7 +170,7 @@ public final class TPM_ALG_ID extends TpmEnum<TPM_ALG_ID>
         ANY2
     }
 
-    private static ValueMap<TPM_ALG_ID> _ValueMap = new ValueMap<>();
+    private static final ValueMap<TPM_ALG_ID> _ValueMap = new ValueMap<>();
 
     /** These definitions provide mapping of the Java enum constants to their TPM integer values */
     public static final TPM_ALG_ID

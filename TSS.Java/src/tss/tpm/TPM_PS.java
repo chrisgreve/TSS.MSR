@@ -65,7 +65,7 @@ public final class TPM_PS extends TpmEnum<TPM_PS>
         TC
     }
 
-    private static ValueMap<TPM_PS> _ValueMap = new ValueMap<>();
+    private static final ValueMap<TPM_PS> _ValueMap = new ValueMap<>();
 
     /** These definitions provide mapping of the Java enum constants to their TPM integer values */
     public static final TPM_PS

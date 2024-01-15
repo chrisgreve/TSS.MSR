@@ -343,7 +343,7 @@ public final class TPM_PT extends TpmEnum<TPM_PT>
         AUDIT_COUNTER_1
     }
 
-    private static ValueMap<TPM_PT> _ValueMap = new ValueMap<>();
+    private static final ValueMap<TPM_PT> _ValueMap = new ValueMap<>();
 
     /** These definitions provide mapping of the Java enum constants to their TPM integer values */
     public static final TPM_PT

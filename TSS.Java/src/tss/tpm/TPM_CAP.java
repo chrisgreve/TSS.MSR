@@ -58,7 +58,7 @@ public final class TPM_CAP extends TpmEnum<TPM_CAP>
         VENDOR_PROPERTY
     }
 
-    private static ValueMap<TPM_CAP> _ValueMap = new ValueMap<>();
+    private static final ValueMap<TPM_CAP> _ValueMap = new ValueMap<>();
 
     /** These definitions provide mapping of the Java enum constants to their TPM integer values */
     public static final TPM_CAP
