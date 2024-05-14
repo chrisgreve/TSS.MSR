@@ -6,6 +6,9 @@
   <name>TSS.Java</name>
   <description>A TPM 2.0 access library for Java</description>
   <packaging>jar</packaging>
+  <!--
+   mvn install:install-file -Dfile=target/TSS.Java-1.0.1.jar -DgroupId=com.microsoft.azure -DartifactId=TSS.Java -Dversion=1.0.1 -Dpackaging=jar
+  -->
   <properties>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
